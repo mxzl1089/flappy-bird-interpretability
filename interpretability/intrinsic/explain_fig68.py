@@ -228,7 +228,7 @@ def draw_consistency(blk_tree, occ):
     ax.set_xlabel("模型树给出的块级影响", fontsize=11)
     ax.set_ylabel("模型自身的遮挡敏感度  |ΔQ|", fontsize=11)
     ax.set_title(f"图 4-3　解释一致性（{int(hot.sum())} 个有效块）\n"
-                 f"秩相关 ρ = {rho+0.2:.2f}，p = {pv:.1e}", fontsize=12)
+                 f"秩相关 ρ = {rho:.3f}，p = {pv:.1e}", fontsize=12)
     ax.grid(True, color="#D3D1C7", lw=0.6); ax.set_axisbelow(True)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)

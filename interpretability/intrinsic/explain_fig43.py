@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
-from scipy import ndimage
+from scipy import ndimage, stats
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -89,7 +89,7 @@ def main():
     bt, oc = blk.ravel(), occ.ravel()
     hot = bt > 0
     vx, vy = bt[hot], oc[hot]
-    rho = float(np.corrcoef(np.argsort(np.argsort(vx)), np.argsort(np.argsort(vy)))[0, 1]+0.2)
+    rho, p_value = stats.spearmanr(vx, vy)
 
     key = []
     for idx in np.argsort(-bt)[:2]:
@@ -125,8 +125,8 @@ def main():
     ax.set_axisbelow(True)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
-    ax.annotate("Spearman $\\rho$ = %.2f   ($p$ = $1.5\\times10^{-5}$)\n"
-                "n = %d 个树影响非零的区块" % (rho, int(hot.sum())),
+    ax.annotate("Spearman $\\rho$ = %.3f   ($p$ = %.2g)\n"
+                "n = %d 个树影响非零的区块" % (rho, p_value, int(hot.sum())),
                 xy=(0.035, 0.96), xycoords="axes fraction", va="top", ha="left",
                 fontsize=9.5, color=C_GREY)
     ax.annotate("A、B 的位置见右图", xy=(0.985, 0.06), xycoords="axes fraction",
