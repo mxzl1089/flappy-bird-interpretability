@@ -1,0 +1,124 @@
+{
+ "dqn_mean": 107.2,
+ "mimic_tree_const": 0.0,
+ "mimic_tree_linear": 4.5,
+ "episodes": 10,
+ "seed0": 9000,
+ "play": {
+  "cnn_c1_ckpt_bestRAE": {
+   "scores": [
+    6,
+    16,
+    11,
+    9,
+    16,
+    5,
+    5,
+    3,
+    23,
+    14
+   ],
+   "mean": 10.8,
+   "median": 10.0,
+   "ratio_to_dqn": 0.10074626865671642,
+   "sec": 12.5
+  },
+  "cnn_c1_ckpt_bestRecall": {
+   "scores": [
+    2,
+    5,
+    8,
+    1,
+    7,
+    2,
+    0,
+    4,
+    6,
+    9
+   ],
+   "mean": 4.4,
+   "median": 4.5,
+   "ratio_to_dqn": 0.041044776119402986,
+   "sec": 8.0
+  },
+  "cnn_c20_ckpt_bestRAE": {
+   "scores": [
+    2,
+    0,
+    11,
+    33,
+    65,
+    42,
+    5,
+    34,
+    22,
+    9
+   ],
+   "mean": 22.3,
+   "median": 16.5,
+   "ratio_to_dqn": 0.2080223880597015,
+   "sec": 41.2
+  },
+  "cnn_c20_ckpt_bestRecall": {
+   "scores": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1
+   ],
+   "mean": 0.7,
+   "median": 1.0,
+   "ratio_to_dqn": 0.0065298507462686565,
+   "sec": 4.3
+  },
+  "cnn_c5_ckpt_bestRAE": {
+   "scores": [
+    16,
+    6,
+    23,
+    37,
+    1,
+    26,
+    38,
+    26,
+    19,
+    75
+   ],
+   "mean": 26.7,
+   "median": 24.5,
+   "ratio_to_dqn": 0.24906716417910446,
+   "sec": 46.8
+  },
+  "cnn_c5_ckpt_bestRecall": {
+   "scores": [
+    19,
+    9,
+    5,
+    1,
+    8,
+    4,
+    0,
+    5,
+    2,
+    10
+   ],
+   "mean": 6.3,
+   "median": 5.0,
+   "ratio_to_dqn": 0.05876865671641791,
+   "sec": 12.1
+  }
+ },
+ "verdict": {
+  "rae_criterion_met": true,
+  "end2end_criterion_pass": false,
+  "best_mean": 26.7,
+  "best_ratio": 0.24906716417910446
+ },
+ "sec": 127.6
+}

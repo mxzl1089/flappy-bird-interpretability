@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 训练产物：模型权重 / 日志 / 中间数组（体积大，不入库）
+runs/
+*.pt
+*.pth
+*.npz
+*.pkl
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/

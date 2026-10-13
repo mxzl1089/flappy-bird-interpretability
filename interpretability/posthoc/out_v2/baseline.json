@@ -1,0 +1,138 @@
+{
+  "screen": [
+    288,
+    512
+  ],
+  "basey": 404.48,
+  "base_png": {
+    "size": [
+      336,
+      112
+    ],
+    "alpha_pos_frac": 1.0,
+    "rgb_min": 34.0
+  },
+  "background_png": {
+    "size": [
+      288,
+      512
+    ],
+    "rgb_max": 0.0,
+    "gray_gt1_frac": 0.0
+  },
+  "pipe_png": [
+    52,
+    320
+  ],
+  "player_png": [
+    34,
+    24
+  ],
+  "pipe_gap_size": 100,
+  "only_background_nonzero": 0.0,
+  "background_plus_base_nonzero": 0.225,
+  "ground_row0": 62,
+  "map_checks": {
+    "x100_140_y200_240": [
+      [
+        27,
+        39
+      ],
+      [
+        30,
+        37
+      ]
+    ],
+    "x120_160_y300_340": [
+      [
+        32,
+        44
+      ],
+      [
+        46,
+        53
+      ]
+    ],
+    "x0_32_y0_32": [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "x256_288_y480_512": [
+      [
+        70,
+        79
+      ],
+      [
+        74,
+        79
+      ]
+    ]
+  },
+  "run": {
+    "n_frames": 3000,
+    "scores": [
+      45,
+      66,
+      68,
+      68
+    ],
+    "nonzero_frac": 0.4504194270833333,
+    "all_object_frac": 0.4504194270833333,
+    "dynamic_frac": 0.22541942708333335,
+    "sky_frac": 0.5495805729166666,
+    "ground_band_frac_of_pixels": 0.225,
+    "ground_band_per_frame_white": [
+      255.0,
+      255.0
+    ],
+    "ground_band_per_frame_std": 0.0
+  },
+  "pipe_period": {
+    "n": 17,
+    "mean": 36.94117647058823,
+    "values": {
+      "36": 9,
+      "38": 8
+    }
+  },
+  "value": {
+    "q_mean_act0": 10.08647632598877,
+    "q_mean_act1": 5.849793434143066,
+    "q_chosen_mean": 10.160259246826172,
+    "q_global_max": 10.857629776000977,
+    "flap_rate": 0.05533333333333333,
+    "margin_mean": 4.384247779846191
+  },
+  "q_bound": {
+    "gamma": 0.99,
+    "period_used": 37,
+    "gamma_n": 0.6894490858690777,
+    "V_star": 12.220083904111185,
+    "max_q": 10.857629776000977,
+    "ratio": 0.8885069743545836
+  },
+  "expect": {
+    "ground_row0": 62
+  },
+  "tolerance": {
+    "only_background_nonzero": 1e-09,
+    "ground_row0": 0,
+    "ground_band_per_frame_std": 1e-06,
+    "q_bound_ratio_max": 1.0
+  },
+  "map": {
+    "ground_row0": 62,
+    "axis0_from_screenx": "round(x/288*80) ± 1",
+    "axis1_from_screeny": "round(y/512*80) ± 1"
+  },
+  "selfcheck": {
+    "passed": true,
+    "fails": []
+  }
+}

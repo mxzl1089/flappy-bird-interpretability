@@ -1,0 +1,73 @@
+{
+ "multilhead_vs_single": {
+  "note": "多头=QNet(2) 分别回归 Q0/Q1（decompose.py）；单头=QNet(1) 直接回归 margin",
+  "single_bestRAE": {
+   "name": "bestRAE",
+   "recall_flap": 0.7328,
+   "spec_noflap": 0.9687,
+   "agree": 0.952,
+   "MAE_margin": 0.4894,
+   "RAE_margin": 0.1126,
+   "err_signed_flap": {
+    "p5": -5.0526,
+    "p25": -0.2813,
+    "p50": -0.0607,
+    "p75": 0.0825,
+    "p95": 2.2403
+   },
+   "err_signed_noflap": {
+    "p5": -1.117,
+    "p25": -0.143,
+    "p50": 0.0113,
+    "p75": 0.2293,
+    "p95": 1.2967
+   },
+   "frac_neg_err_flap": 0.6509,
+   "margin_std": 4.7412
+  },
+  "single_bestRecall": {
+   "name": "bestRecall",
+   "recall_flap": 0.9504,
+   "spec_noflap": 0.7198,
+   "agree": 0.7362,
+   "MAE_margin": 0.8498,
+   "RAE_margin": 0.1954,
+   "err_signed_flap": {
+    "p5": -7.9598,
+    "p25": -0.4584,
+    "p50": 0.2091,
+    "p75": 0.5679,
+    "p95": 1.1942
+   },
+   "err_signed_noflap": {
+    "p5": -2.1202,
+    "p25": -0.5092,
+    "p50": 0.1585,
+    "p75": 0.5109,
+    "p95": 1.5503
+   },
+   "frac_neg_err_flap": 0.3427,
+   "margin_std": 4.7412
+  }
+ },
+ "epochs": 300,
+ "sec": 319.1,
+ "end2end": {
+  "scores": [
+   5,
+   5,
+   1,
+   18,
+   9,
+   21,
+   5,
+   31,
+   9,
+   1
+  ],
+  "mean": 10.5,
+  "median": 7.0,
+  "dqn_mean": 107.2,
+  "ratio_to_dqn": 0.09794776119402984
+ }
+}

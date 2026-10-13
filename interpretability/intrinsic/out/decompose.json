@@ -1,0 +1,292 @@
+{
+ "teacher": {
+  "flap_rate": 0.07092632222561908,
+  "q1_std": 4.446651458740234,
+  "margin_flap": {
+   "p5": 0.0058,
+   "p25": 0.0445,
+   "p50": 0.1289,
+   "p75": 1.1611,
+   "p95": 10.9499
+  },
+  "margin_noflap": {
+   "p5": 0.0574,
+   "p25": 0.1864,
+   "p50": 2.4995,
+   "p75": 9.3474,
+   "p95": 11.2369
+  },
+  "frac_margin_below": {
+   "0.05": 0.27155172413793105,
+   "0.1": 0.4353448275862069,
+   "0.2": 0.5883620689655172,
+   "0.3": 0.6573275862068966,
+   "0.5": 0.7025862068965517
+  }
+ },
+ "tree": {
+  "recall_flap": 0.7004,
+  "spec_noflap": 0.8778,
+  "agree": 0.8652,
+  "RAE_Q1": 0.1687,
+  "MAE_Q1": 0.7053,
+  "RAE_Q0": 0.4317,
+  "MAE_Q0": 0.1889,
+  "RAE_Q1_flap": 1.0322,
+  "RAE_Q1_noflap": 0.1747,
+  "err_signed_flap": {
+   "p5": -6.5025,
+   "p25": -0.728,
+   "p50": -0.0717,
+   "p75": 0.2185,
+   "p95": 2.0455
+  },
+  "err_abs_flap_mean": 1.4272,
+  "frac_neg_err_flap": 0.5841,
+  "recall_if_debiased": {
+   "0.0": 0.7004,
+   "0.1": 0.7866,
+   "0.2": 0.8319,
+   "0.3": 0.8642,
+   "0.5": 0.9159,
+   "0.8": 0.9569,
+   "debiased": 0.7586
+  },
+  "leaves": 129,
+  "RAE_Q1_train": 0.0928,
+  "recall_flap_train": 0.7707,
+  "sec": 24.0,
+  "name": "tree_d8_linear"
+ },
+ "tree_best": {
+  "recall_flap": 0.6573,
+  "spec_noflap": 0.9084,
+  "agree": 0.8906,
+  "RAE_Q1": 0.1563,
+  "MAE_Q1": 0.6534,
+  "RAE_Q0": 0.3638,
+  "MAE_Q0": 0.1591,
+  "RAE_Q1_flap": 0.7028,
+  "RAE_Q1_noflap": 0.1633,
+  "err_signed_flap": {
+   "p5": -5.6155,
+   "p25": -0.5486,
+   "p50": -0.091,
+   "p75": 0.0977,
+   "p95": 2.4793
+  },
+  "err_abs_flap_mean": 1.3372,
+  "frac_neg_err_flap": 0.6509,
+  "recall_if_debiased": {
+   "0.0": 0.6573,
+   "0.1": 0.806,
+   "0.2": 0.8879,
+   "0.3": 0.931,
+   "0.5": 0.9569,
+   "0.8": 0.9784,
+   "debiased": 0.7931
+  },
+  "leaves": 339,
+  "RAE_Q1_train": 0.0625,
+  "name": "tree_d10_mc8_linear"
+ },
+ "cnn": {
+  "c1": {
+   "c": 1.0,
+   "val_RAE": 0.0996,
+   "val_recall": 0.988,
+   "ckpt_bestRAE": {
+    "recall_flap": 0.6552,
+    "spec_noflap": 0.9778,
+    "agree": 0.9549,
+    "RAE_Q1": 0.098,
+    "MAE_Q1": 0.4099,
+    "RAE_Q0": 0.297,
+    "MAE_Q0": 0.1299,
+    "RAE_Q1_flap": 0.3974,
+    "RAE_Q1_noflap": 0.1027,
+    "err_signed_flap": {
+     "p5": -5.4871,
+     "p25": -0.2759,
+     "p50": -0.0948,
+     "p75": 0.102,
+     "p95": 1.6961
+    },
+    "err_abs_flap_mean": 1.0939,
+    "frac_neg_err_flap": 0.6681,
+    "recall_if_debiased": {
+     "0.0": 0.6552,
+     "0.1": 0.8621,
+     "0.2": 0.9591,
+     "0.3": 0.9828,
+     "0.5": 0.9849,
+     "0.8": 0.9978,
+     "debiased": 0.8578
+    },
+    "name": "cnn_c1_ckpt_bestRAE"
+   },
+   "ckpt_bestRecall": {
+    "recall_flap": 0.9806,
+    "spec_noflap": 0.6425,
+    "agree": 0.6665,
+    "RAE_Q1": 0.1295,
+    "MAE_Q1": 0.5413,
+    "RAE_Q0": 0.8787,
+    "MAE_Q0": 0.3844,
+    "RAE_Q1_flap": 0.7713,
+    "RAE_Q1_noflap": 0.1342,
+    "err_signed_flap": {
+     "p5": -5.4521,
+     "p25": -0.0771,
+     "p50": 0.3311,
+     "p75": 0.5319,
+     "p95": 2.2979
+    },
+    "err_abs_flap_mean": 1.319,
+    "frac_neg_err_flap": 0.2694,
+    "recall_if_debiased": {
+     "0.0": 0.9806,
+     "0.1": 0.9892,
+     "0.2": 0.9957,
+     "0.3": 0.9978,
+     "0.5": 0.9978,
+     "0.8": 1.0,
+     "debiased": 0.8082
+    },
+    "name": "cnn_c1_ckpt_bestRecall"
+   }
+  },
+  "c5": {
+   "c": 5.0,
+   "val_RAE": 0.0998,
+   "val_recall": 0.9819,
+   "ckpt_bestRAE": {
+    "recall_flap": 0.7328,
+    "spec_noflap": 0.9692,
+    "agree": 0.9525,
+    "RAE_Q1": 0.1023,
+    "MAE_Q1": 0.4275,
+    "RAE_Q0": 0.3018,
+    "MAE_Q0": 0.132,
+    "RAE_Q1_flap": 0.3587,
+    "RAE_Q1_noflap": 0.1074,
+    "err_signed_flap": {
+     "p5": -4.4953,
+     "p25": -0.2973,
+     "p50": -0.073,
+     "p75": 0.0661,
+     "p95": 1.6638
+    },
+    "err_abs_flap_mean": 1.0558,
+    "frac_neg_err_flap": 0.6444,
+    "recall_if_debiased": {
+     "0.0": 0.7328,
+     "0.1": 0.9203,
+     "0.2": 0.9784,
+     "0.3": 0.9871,
+     "0.5": 0.9935,
+     "0.8": 0.9978,
+     "debiased": 0.8966
+    },
+    "name": "cnn_c5_ckpt_bestRAE"
+   },
+   "ckpt_bestRecall": {
+    "recall_flap": 0.9828,
+    "spec_noflap": 0.6234,
+    "agree": 0.6489,
+    "RAE_Q1": 0.1143,
+    "MAE_Q1": 0.478,
+    "RAE_Q0": 1.0104,
+    "MAE_Q0": 0.442,
+    "RAE_Q1_flap": 0.5244,
+    "RAE_Q1_noflap": 0.1194,
+    "err_signed_flap": {
+     "p5": -4.827,
+     "p25": -0.0168,
+     "p50": 0.3459,
+     "p75": 0.5319,
+     "p95": 2.2992
+    },
+    "err_abs_flap_mean": 1.2487,
+    "frac_neg_err_flap": 0.2543,
+    "recall_if_debiased": {
+     "0.0": 0.9828,
+     "0.1": 0.9892,
+     "0.2": 0.9892,
+     "0.3": 0.9914,
+     "0.5": 0.9957,
+     "0.8": 1.0,
+     "debiased": 0.8815
+    },
+    "name": "cnn_c5_ckpt_bestRecall"
+   }
+  },
+  "c20": {
+   "c": 20.0,
+   "val_RAE": 0.1046,
+   "val_recall": 1.0,
+   "ckpt_bestRAE": {
+    "recall_flap": 0.8168,
+    "spec_noflap": 0.9362,
+    "agree": 0.9277,
+    "RAE_Q1": 0.1037,
+    "MAE_Q1": 0.4334,
+    "RAE_Q0": 0.3298,
+    "MAE_Q0": 0.1443,
+    "RAE_Q1_flap": 0.3195,
+    "RAE_Q1_noflap": 0.1091,
+    "err_signed_flap": {
+     "p5": -4.0141,
+     "p25": -0.2124,
+     "p50": -0.0276,
+     "p75": 0.1357,
+     "p95": 2.8077
+    },
+    "err_abs_flap_mean": 1.104,
+    "frac_neg_err_flap": 0.5625,
+    "recall_if_debiased": {
+     "0.0": 0.8168,
+     "0.1": 0.944,
+     "0.2": 0.9914,
+     "0.3": 0.9935,
+     "0.5": 0.9978,
+     "0.8": 1.0,
+     "debiased": 0.8556
+    },
+    "name": "cnn_c20_ckpt_bestRAE"
+   },
+   "ckpt_bestRecall": {
+    "recall_flap": 1.0,
+    "spec_noflap": 0.5722,
+    "agree": 0.6026,
+    "RAE_Q1": 0.2472,
+    "MAE_Q1": 1.0336,
+    "RAE_Q0": 0.9757,
+    "MAE_Q0": 0.4268,
+    "RAE_Q1_flap": 2.95,
+    "RAE_Q1_noflap": 0.248,
+    "err_signed_flap": {
+     "p5": -4.2528,
+     "p25": 0.645,
+     "p50": 1.1306,
+     "p75": 1.6314,
+     "p95": 3.8301
+    },
+    "err_abs_flap_mean": 1.9176,
+    "frac_neg_err_flap": 0.1659,
+    "recall_if_debiased": {
+     "0.0": 1.0,
+     "0.1": 1.0,
+     "0.2": 1.0,
+     "0.3": 1.0,
+     "0.5": 1.0,
+     "0.8": 1.0,
+     "debiased": 0.7737
+    },
+    "name": "cnn_c20_ckpt_bestRecall"
+   }
+  }
+ },
+ "sec": 862.7,
+ "epochs": 300
+}
