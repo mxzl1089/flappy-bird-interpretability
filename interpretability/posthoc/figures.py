@@ -1,4 +1,5 @@
 import argparse
+import gzip
 import json
 import os
 import sys
@@ -30,7 +31,7 @@ DYN = os.path.join(OUT, "dynamics.json")
 MAPS = os.path.join(OUT, "attr_maps.npz")
 PROBE = os.path.join(OUT, "probe.npz")
 EVAL = os.path.join(ROOT, "results", "dqn.json")
-E2JSON = os.path.join(OUT, "e2_methods.json")
+E2JSON = os.path.join(OUT, "e2_methods.json.gz")
 E4JSON = os.path.join(OUT, "e4_faith.json")
 
 C_SCORE = "#2F6FED"
@@ -217,7 +218,8 @@ def fig5_maps(d, rec, maps, probe):
 
 def compute_e2(d, rec, probe, device, states_n=4, samples=2048):
     if os.path.exists(E2JSON):
-        return json.load(open(E2JSON, encoding="utf-8"))
+        with gzip.open(E2JSON, "rt", encoding="utf-8") as fh:
+            return json.load(fh)
 
     picks = [0, 7, 14, 25, 30, -1]
     steps = [int(s) for s in rec["step"][picks]]
@@ -237,7 +239,8 @@ def compute_e2(d, rec, probe, device, states_n=4, samples=2048):
         out["maps"][str(st)] = {k: v.tolist() for k, v in acc.items()}
         print(f"    E2: {st} 步 完成（{len(A.METHODS)} 种方法 × {states_n} 帧）")
 
-    json.dump(out, open(E2JSON, "w", encoding="utf-8"))
+    with gzip.open(E2JSON, "wt", encoding="utf-8") as fh:
+        json.dump(out, fh)
     return out
 
 def fig6_methods(e2, probe):
