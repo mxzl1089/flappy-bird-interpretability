@@ -2,13 +2,29 @@
 
 **DQN / PPO 从零实现 · 跨难度泛化 · 事后与内在可解释性**
 
-**作者**：DreamRoad（lu haobo）
+**作者**：DreamRoad
 
 自建像素级 Flappy Bird 环境，从零实现 DQN 与 PPO 两条训练管线；诊断 DQN 的灾难性遗忘并与 PPO 对照；同一个 DQN 不微调、直接改缝隙高度做跨难度泛化；用五种归因 + 五区抹除 + 反事实干预做事后可解释性；把冻结的 DQN 蒸馏成可读的线性模型 U 树做内在可解释性。
 
 <img src="assets/figures/fig00_demo.gif" width="230">
 
 **技术栈**：Python · PyTorch · pygame（自建像素级环境）· NumPy · TensorBoard · DQN（经验回放 + 目标网络）· PPO（GAE + 比率裁剪 + 优势标准化）· CNN 像素策略网络 · 归因（Saliency / SmoothGrad / IG / Occlusion / KernelSHAP）· 反事实干预 · LMUT
+
+## 整体架构
+
+```mermaid
+flowchart TD
+    ENV["env/ 自建像素级环境<br/>288×512 @30FPS · 状态 = 连续 4 帧 80×80"]
+    ENV --> DQN["dqn/ DQN<br/>经验回放 5 万 + 目标网络"]
+    ENV --> PPO["ppo/ PPO<br/>GAE + 比率裁剪 + 优势标准化"]
+    DQN --> RES["results/ 推理期评测<br/>40 DQN + 38 PPO 存档 × 10 局贪心"]
+    PPO --> RES
+    DQN --> GEN["generalization/ 跨难度泛化<br/>同一 DQN 换缝隙高度 120 / 150"]
+    DQN -.-> PH["interpretability/posthoc/ 事后<br/>冻结 DQN · 归因 · 相位折叠 · 五区抹除 · 反事实"]
+    DQN -.-> IN["interpretability/intrinsic/ 内在<br/>冻结 DQN · LMUT 蒸馏树 · 解释一致性"]
+```
+
+两条训练管线共用同一个环境、同一套预处理与同一个 CNN 主干，只在算法上分叉；可解释性两条路线都以**训练后的 DQN 权重完全冻结**为解释对象。
 
 ---
 
