@@ -533,56 +533,6 @@ def fig_cf(cf, cb, path, sample_path=None):
     plt.close(fig)
     print("    ✔ 已保存", os.path.relpath(path))
 
-def fig_migration(path, src=None):
-    src = src or os.path.join(OUT, "dynamics.json")
-    d = json.load(open(src, encoding="utf-8"))
-    rec = d["records"]
-    base = d.get("baseline", {})
-    a_band = float(base.get("ground_band", 0.225))
-    a_dyn = float(base.get("dynamic_obj", 0.225))
-    step = np.array([r["step"] for r in rec], float) / 1e4
-    band = np.array([r["share_band"] for r in rec], float) / a_band
-    dyn = np.array([r["share_dyn"] for r in rec], float) / a_dyn
-    rb = float(np.corrcoef(step, band)[0, 1])
-    rd = float(np.corrcoef(step, dyn)[0, 1])
-
-    cross = float("nan")
-    sgn = np.sign(band - dyn)
-    k = np.where(np.diff(sgn) != 0)[0]
-    if len(k):
-        i = int(k[0])
-        t = (dyn[i] - band[i]) / ((band[i + 1] - band[i]) - (dyn[i + 1] - dyn[i]))
-        cross = float(step[i] + t * (step[i + 1] - step[i]))
-
-    fig, ax = plt.subplots(figsize=(6.8, 4.0), layout="constrained")
-    ax.plot(step, band, "-o", ms=4, lw=1.8, color="#9AA0A6",
-            label="地面带　ρ = %+.2f" % rb)
-    ax.plot(step, dyn, "-s", ms=4, lw=1.8, color="#D85A30",
-            label="动态物体（管子+小鸟）　ρ = %+.2f" % rd)
-    ax.axhline(1.0, color="#888780", lw=1.1, ls="--")
-    ax.annotate("%.0f万步：%.2f" % (step[-1], band[-1]), (step[-1], band[-1]),
-                textcoords="offset points", xytext=(-8, 8), ha="right", fontsize=9,
-                color="#5F5E5A")
-    ax.annotate("%.0f万步：%.2f" % (step[-1], dyn[-1]), (step[-1], dyn[-1]),
-                textcoords="offset points", xytext=(-8, -14), ha="right", fontsize=9,
-                color="#5F5E5A")
-    if np.isfinite(cross):
-        ax.annotate("约 %.0f 万步两线交叉" % cross, (cross, 1.6),
-                    textcoords="offset points", xytext=(6, 10), fontsize=8.6,
-                    color="#5F5E5A")
-    ax.set_yscale("log")
-    ax.set_xlabel("训练步数（万步）", fontsize=10)
-    ax.set_ylabel("归因密度（单位面积归因）", fontsize=10)
-    ax.set_ylim(0.15, 6.0)
-    ax.legend(fontsize=9, frameon=False, loc="center right")
-    ax.grid(alpha=0.20, which="both")
-    for sp in ("top", "right"):
-        ax.spines[sp].set_visible(False)
-    fig.savefig(path, dpi=150, facecolor="white")
-    plt.close(fig)
-    print("    ✔ 已保存", os.path.relpath(path),
-          f"（端点 地面带 {band[0]:.2f}→{band[-1]:.2f}，"
-          f"动态 {dyn[0]:.2f}→{dyn[-1]:.2f}，交叉 ≈ {cross:.0f} 万步）")
 
 def main():
     ap = argparse.ArgumentParser()
@@ -610,7 +560,6 @@ def main():
         fig_cf(d["cf_bird"], d["cf_blocks"],
                os.path.join(OUT, "figG_counterfactual%s.png" % args.tag),
                sample_path=os.path.join(OUT, "cf_sample%s.npz" % args.tag))
-        fig_migration(os.path.join(OUT, "figH_attention_migration%s.png" % args.tag))
         return
 
     device = torch.device("cpu")
@@ -692,7 +641,6 @@ def main():
     fig_ablation(abl, ea, os.path.join(OUT, "figF_region_ablation%s.png" % args.tag))
     fig_cf(cf, cb, os.path.join(OUT, "figG_counterfactual%s.png" % args.tag),
            sample_path=sp)
-    fig_migration(os.path.join(OUT, "figH_attention_migration%s.png" % args.tag))
     print(f"\n全部完成，用时 {time.time() - t0:.0f}s。")
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--gap", type=int, required=True, help="上下管之间的缝隙高度（px）")
     ap.add_argument("--episodes", type=int, default=30)
-    ap.add_argument("--ckpt", type=str, default=r"runs\ckpt-1890000.pt")
+    ap.add_argument("--ckpt", type=str, default="runs/ckpt-1890000.pt")
     ap.add_argument("--cap", type=int, default=1000, help="单局封顶分数（>=cap 直接结束并记为 cap）")
     ap.add_argument("--seed", type=int, default=12345)
     ap.add_argument("--out", type=str, default=None)

@@ -7,7 +7,7 @@
   "records": [
     {
       "step": 50176,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-50176.pt",
+      "checkpoint": "local-artifact/ckpt-50176.pt",
       "scores": [
         0,
         0,
@@ -29,7 +29,7 @@
     },
     {
       "step": 100352,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-100352.pt",
+      "checkpoint": "local-artifact/ckpt-100352.pt",
       "scores": [
         0,
         0,
@@ -51,7 +51,7 @@
     },
     {
       "step": 150528,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-150528.pt",
+      "checkpoint": "local-artifact/ckpt-150528.pt",
       "scores": [
         2,
         1,
@@ -73,7 +73,7 @@
     },
     {
       "step": 200704,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-200704.pt",
+      "checkpoint": "local-artifact/ckpt-200704.pt",
       "scores": [
         22,
         9,
@@ -95,7 +95,7 @@
     },
     {
       "step": 250880,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-250880.pt",
+      "checkpoint": "local-artifact/ckpt-250880.pt",
       "scores": [
         16,
         14,
@@ -117,7 +117,7 @@
     },
     {
       "step": 300032,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-300032.pt",
+      "checkpoint": "local-artifact/ckpt-300032.pt",
       "scores": [
         5,
         358,
@@ -139,7 +139,7 @@
     },
     {
       "step": 350208,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-350208.pt",
+      "checkpoint": "local-artifact/ckpt-350208.pt",
       "scores": [
         27,
         57,
@@ -161,7 +161,7 @@
     },
     {
       "step": 400384,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-400384.pt",
+      "checkpoint": "local-artifact/ckpt-400384.pt",
       "scores": [
         51,
         1004,
@@ -183,7 +183,7 @@
     },
     {
       "step": 450560,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-450560.pt",
+      "checkpoint": "local-artifact/ckpt-450560.pt",
       "scores": [
         24,
         17,
@@ -205,7 +205,7 @@
     },
     {
       "step": 500736,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-500736.pt",
+      "checkpoint": "local-artifact/ckpt-500736.pt",
       "scores": [
         63,
         23,
@@ -227,7 +227,7 @@
     },
     {
       "step": 550912,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-550912.pt",
+      "checkpoint": "local-artifact/ckpt-550912.pt",
       "scores": [
         22,
         9,
@@ -249,7 +249,7 @@
     },
     {
       "step": 600064,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-600064.pt",
+      "checkpoint": "local-artifact/ckpt-600064.pt",
       "scores": [
         105,
         271,
@@ -271,7 +271,7 @@
     },
     {
       "step": 650240,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-650240.pt",
+      "checkpoint": "local-artifact/ckpt-650240.pt",
       "scores": [
         4,
         37,
@@ -293,7 +293,7 @@
     },
     {
       "step": 700416,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-700416.pt",
+      "checkpoint": "local-artifact/ckpt-700416.pt",
       "scores": [
         15,
         81,
@@ -315,7 +315,7 @@
     },
     {
       "step": 750592,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-750592.pt",
+      "checkpoint": "local-artifact/ckpt-750592.pt",
       "scores": [
         35,
         42,
@@ -337,7 +337,7 @@
     },
     {
       "step": 800768,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-800768.pt",
+      "checkpoint": "local-artifact/ckpt-800768.pt",
       "scores": [
         365,
         73,
@@ -359,7 +359,7 @@
     },
     {
       "step": 850944,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-850944.pt",
+      "checkpoint": "local-artifact/ckpt-850944.pt",
       "scores": [
         18,
         251,
@@ -381,7 +381,7 @@
     },
     {
       "step": 900096,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-900096.pt",
+      "checkpoint": "local-artifact/ckpt-900096.pt",
       "scores": [
         849,
         232,
@@ -403,7 +403,7 @@
     },
     {
       "step": 950272,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-950272.pt",
+      "checkpoint": "local-artifact/ckpt-950272.pt",
       "scores": [
         607,
         821,
@@ -425,7 +425,7 @@
     },
     {
       "step": 1000448,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1000448.pt",
+      "checkpoint": "local-artifact/ckpt-1000448.pt",
       "scores": [
         327,
         369,
@@ -447,7 +447,7 @@
     },
     {
       "step": 1050624,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1050624.pt",
+      "checkpoint": "local-artifact/ckpt-1050624.pt",
       "scores": [
         319,
         21,
@@ -469,7 +469,7 @@
     },
     {
       "step": 1100800,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1100800.pt",
+      "checkpoint": "local-artifact/ckpt-1100800.pt",
       "scores": [
         36,
         5,
@@ -491,7 +491,7 @@
     },
     {
       "step": 1150976,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1150976.pt",
+      "checkpoint": "local-artifact/ckpt-1150976.pt",
       "scores": [
         941,
         275,
@@ -513,7 +513,7 @@
     },
     {
       "step": 1200128,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1200128.pt",
+      "checkpoint": "local-artifact/ckpt-1200128.pt",
       "scores": [
         753,
         668,
@@ -535,7 +535,7 @@
     },
     {
       "step": 1250304,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1250304.pt",
+      "checkpoint": "local-artifact/ckpt-1250304.pt",
       "scores": [
         43,
         174,
@@ -557,7 +557,7 @@
     },
     {
       "step": 1300480,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1300480.pt",
+      "checkpoint": "local-artifact/ckpt-1300480.pt",
       "scores": [
         107,
         25,
@@ -579,7 +579,7 @@
     },
     {
       "step": 1350656,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1350656.pt",
+      "checkpoint": "local-artifact/ckpt-1350656.pt",
       "scores": [
         211,
         490,
@@ -601,7 +601,7 @@
     },
     {
       "step": 1400832,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1400832.pt",
+      "checkpoint": "local-artifact/ckpt-1400832.pt",
       "scores": [
         239,
         253,
@@ -623,7 +623,7 @@
     },
     {
       "step": 1451008,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1451008.pt",
+      "checkpoint": "local-artifact/ckpt-1451008.pt",
       "scores": [
         13,
         482,
@@ -645,7 +645,7 @@
     },
     {
       "step": 1500160,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1500160.pt",
+      "checkpoint": "local-artifact/ckpt-1500160.pt",
       "scores": [
         73,
         219,
@@ -667,7 +667,7 @@
     },
     {
       "step": 1550336,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1550336.pt",
+      "checkpoint": "local-artifact/ckpt-1550336.pt",
       "scores": [
         582,
         1984,
@@ -689,7 +689,7 @@
     },
     {
       "step": 1600512,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1600512.pt",
+      "checkpoint": "local-artifact/ckpt-1600512.pt",
       "scores": [
         52,
         94,
@@ -711,7 +711,7 @@
     },
     {
       "step": 1650688,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1650688.pt",
+      "checkpoint": "local-artifact/ckpt-1650688.pt",
       "scores": [
         495,
         187,
@@ -733,7 +733,7 @@
     },
     {
       "step": 1710080,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1710080.pt",
+      "checkpoint": "local-artifact/ckpt-1710080.pt",
       "scores": [
         15,
         30,
@@ -755,7 +755,7 @@
     },
     {
       "step": 1760256,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1760256.pt",
+      "checkpoint": "local-artifact/ckpt-1760256.pt",
       "scores": [
         1329,
         2317,
@@ -777,7 +777,7 @@
     },
     {
       "step": 1810432,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1810432.pt",
+      "checkpoint": "local-artifact/ckpt-1810432.pt",
       "scores": [
         2445,
         138,
@@ -799,7 +799,7 @@
     },
     {
       "step": 1860608,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1860608.pt",
+      "checkpoint": "local-artifact/ckpt-1860608.pt",
       "scores": [
         1827,
         1637,
@@ -821,7 +821,7 @@
     },
     {
       "step": 1910784,
-      "checkpoint": "C:\\Users\\21745\\Desktop\\FlappyBird_DQN_PyTorch\\PPO\\runs\\ckpt-1910784.pt",
+      "checkpoint": "local-artifact/ckpt-1910784.pt",
       "scores": [
         307,
         241,
